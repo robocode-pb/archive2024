@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="bar">
+        <div class="colorBar">
+            <input type="color" id="color">
+            <input type="button" value="Застосувати" id="fill" onclick="fillIn()">
+            <input type="button" value="Очистити" id="clear" onclick="clearAll()">
+            <input type="button" value="Шахи" id="chess" onclick="chess()">
+        </div>
+
+        <div class="lineWeightBar">
+            <input type="range" id="range" class="lineW">
+        </div>
+    </div>
+
+    <!-- Місце для полотна -->
+    <canvas></canvas>
+    <div id="status">AL - 5%</div>
+</body>
+
+</html>

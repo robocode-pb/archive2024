@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Test Page</title>
+    <style>
+* {
+margin: 0;
+padding: 0;
+
+}
+
+
+body {
+background-image: linear-gradient(270deg,
+ #31fa81 0%, #a939ff 100%);
+font-family: sans-serif;
+letter-spacing: 2px;
+color: white;
+}
+
+
+.wrapper {
+margin: 0 auto;
+height: 900px;
+padding: 10px;
+max-width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.wrapper > div {
+background-color: rgba(0, 0, 0, 0.2);
+width: 200px;
+height: 200px;
+margin: 10px;
+padding: 10px;
+max-width: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.wrapper > div:hover {
+cursor: pointer;
+background-color: rgba(0, 0, 0, 0.3);
+}
+    </style>
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div onclick="block1();" id="block1">
+
+      Click to change BG
+
+    </div>
+
+  </div>
+
+<script>
+    
+function block1() {
+document.body.style.background = `rgb(${rnd(255)}, ${rnd(255)}, ${rnd(255)})`;
+}
+
+
+function rnd(arg) {
+return Math.floor(Math.random()*arg);
+}
+
+
+
+</script>
+
+</body>
+
+</html>

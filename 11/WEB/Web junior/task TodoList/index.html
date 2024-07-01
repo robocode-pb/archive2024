@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - TodoList</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <h1>Todo list</h1>
+    <div id="mainText">
+
+    </div>
+    <div>
+      <input type="text" id="text">
+      <input type="button" id="btn" onclick="change();" value="Add to list">
+      <input type="button" id="btn2" onclick="clearList();" value="Clear list">
+    </div>
+  </div>
+ 
+  <script>
+    let i = 0;
+    function change() {
+      i++;
+      document.getElementById(`mainText`).innerHTML += i + '. ' + document.getElementById(`text`).value + `<br>`;
+    }
+
+    function clearList() {
+      document.getElementById(`mainText`).innerHTML = ``;
+      i = 0;
+    }
+  </script>
+
+</body>
+
+</html>
