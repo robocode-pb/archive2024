@@ -1,6 +1,11 @@
 # This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
+
+Github.bat
+winInstalGit.exe
+VScode.code-workspace
+
 #
 /[Ll]ibrary/
 /[Tt]emp/
@@ -56,9 +61,9 @@ ExportedObj/
 sysinfo.txt
 
 # Builds
-*.apk
+# *.apk
 *.aab
-*.unitypackage
+# *.unitypackage
 *.app
 
 # Crashlytics generated file
