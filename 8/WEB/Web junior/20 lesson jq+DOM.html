@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>jQuery</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+	<script src="js.js"></script>
+    <style>body {
+        background: rgb(240, 241, 238);
+        font-size: 30px;    
+        font-family: 'Inter',Arial,sans-serif;
+        text-align: center;
+    }</style>
+
+</head>
+
+<body>
+	<p id="test">London is a <b>capital</b> of Great Britain</p>
+    <button id="btn1">Show Text</button>
+    <button id="btn2">Show HTML</button>
+    <button id="btn3">instragram.com
+    <br>
+    
+    <p id="output"></p>
+    <input type="range" name="r" class="range"><br>
+    <input type="range" name="g" class="range"><br>
+    <input type="range" name="b" class="range"><br>
+   
+   
+   <script>
+    $(".range").on("change", function(){
+$(document).ready(function(){
+    let color = {'r':0, 'g':0, 'b':0};
+    
+        color[$(this).attr("name")] =  $(this).val;
+   $('body').css("background-color", 
+    `rgb(${color['r']},${color['g']},${color['b']})`);
+   
+});
+    $("#btn1").click(function(){
+      $("#output").text($("#test").atter('id'));
+    });
+     
+      $("#output").text 
+    $("#btn2").click(function(){
+      $("#output").html($("#test").html());
+    });
+   
+
+});
+</script>
+</body>
+
+</html>
+
+
+

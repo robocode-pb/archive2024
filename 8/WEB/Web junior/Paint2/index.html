@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js.js" defer></script>
+</head>
+<body>
+	<div class="bar">
+		<div class="colorBar">
+                <input type="color"                   id="color">
+                <input type="button" value="залити"   id="fill"  onclick="fillIn()">
+                <input type="button" value="очистити" id="clear" onclick="clearAll()">
+			</div>
+
+		<div class="lineWeightBar">
+            <input type="range" id="range">
+		</div>
+	</div>
+    <!-- Місце для полотна -->
+    <canvas id="canvas"></canvas>
+    <div id="status">
+        Розроблено WEBкотиками
+    </div>
+</body>
+</html>
