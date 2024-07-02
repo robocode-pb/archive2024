@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cb:CODEBLOCKS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://education.mit.edu/openblocks/ns http://education.mit.edu/openblocks/codeblocks.xsd" xmlns:cb="http://education.mit.edu/openblocks/ns">
+<Pages collapsible-pages="yes" drawer-with-page="yes">
+<Page page-color="128 128 128" page-drawer="Main" page-infullview="yes" page-name="Main" page-width="1920">
+<PageBlocks>
+<Block genus-name="readNumber" id="173">
+<Location>
+<X>354</X>
+<Y>158</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="164" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="FingerprintEnroll" id="157">
+<Location>
+<X>136</X>
+<Y>209</Y>
+</Location>
+<BeforeBlockId>164</BeforeBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="158" connector-kind="socket" connector-type="number" init-type="number" label="ID" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="variable_number" id="158">
+<Label>id</Label>
+<Location>
+<X>326</X>
+<Y>212</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="157" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="FingerprintDelete" id="159">
+<Location>
+<X>957</X>
+<Y>623</Y>
+</Location>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="160" connector-kind="socket" connector-type="number" init-type="number" label="ID" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="variable_number" id="160">
+<Label>id</Label>
+<Location>
+<X>1125</X>
+<Y>626</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="159" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="variable_number" id="165">
+<Location>
+<X>147</X>
+<Y>309</Y>
+</Location>
+<Plug>
+<BlockConnector connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="setter_variable_number" id="164">
+<Location>
+<X>136</X>
+<Y>155</Y>
+</Location>
+<BeforeBlockId>167</BeforeBlockId>
+<AfterBlockId>157</AfterBlockId>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="173" connector-kind="socket" connector-type="number" init-type="number" label="variable" position-type="single"/>
+<BlockConnector con-block-id="166" connector-kind="socket" connector-type="number" init-type="number" label="value" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="166">
+<Label>0</Label>
+<Location>
+<X>354</X>
+<Y>182</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="164" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="serial_print" id="167">
+<Location>
+<X>136</X>
+<Y>101</Y>
+</Location>
+<BeforeBlockId>147</BeforeBlockId>
+<AfterBlockId>164</AfterBlockId>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="168" connector-kind="socket" connector-type="string" init-type="string" label="message" position-type="single"/>
+<BlockConnector con-block-id="169" connector-kind="socket" connector-type="boolean" init-type="boolean" label="new line" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="true" id="169">
+<Label>true</Label>
+<Location>
+<X>298</X>
+<Y>128</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="167" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="message" id="168">
+<Label>id =</Label>
+<Location>
+<X>298</X>
+<Y>104</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="167" connector-kind="plug" connector-type="string" init-type="string" label="" position-type="single"/>
+</Plug>
+<Sockets num-sockets="1">
+<BlockConnector connector-kind="socket" connector-type="string" init-type="string" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="Fingerprint" id="163">
+<Location>
+<X>942</X>
+<Y>719</Y>
+</Location>
+<Plug>
+<BlockConnector connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="FingerprintGetFingerID" id="161">
+<Location>
+<X>932</X>
+<Y>684</Y>
+</Location>
+<Plug>
+<BlockConnector connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
+</Plug>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="162" connector-kind="socket" connector-type="number" init-type="number" label="ID" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="variable_number" id="162">
+<Label>id</Label>
+<Location>
+<X>1128</X>
+<Y>684</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="161" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="program" id="147">
+<Location>
+<X>30</X>
+<Y>28</Y>
+</Location>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="154" connector-kind="socket" connector-type="cmd" init-type="cmd" label="setup" position-type="single"/>
+<BlockConnector con-block-id="167" connector-kind="socket" connector-type="cmd" init-type="cmd" label="loop" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="SetFingerprint" id="154">
+<Location>
+<X>137</X>
+<Y>36</Y>
+</Location>
+<BeforeBlockId>147</BeforeBlockId>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="155" connector-kind="socket" connector-type="number" init-type="number" label="RX_pin" position-type="single"/>
+<BlockConnector con-block-id="156" connector-kind="socket" connector-type="number" init-type="number" label="TX_pin" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="156">
+<Label>3</Label>
+<Location>
+<X>421</X>
+<Y>63</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="154" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="number" id="155">
+<Label>2</Label>
+<Location>
+<X>421</X>
+<Y>39</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="154" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+</PageBlocks>
+</Page>
+</Pages>
+</cb:CODEBLOCKS>

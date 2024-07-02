@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>jQuery</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+	<script src="js.js"></script>
+    <style>body {
+        background: rgb(238, 241, 241);
+        font-size: 30px;    
+        font-family: 'Inter',Arial,sans-serif;
+        text-align: center;
+    }</style>
+
+</head>
+
+<body>
+	<p id="test">
+        London is a <b>capital</b> of Great Britain
+    </p>
+	<button id="btn1">Show Text</button>
+	<button id="btn2">Show HTML</button>
+    <button id="btn3">instagram.com</button>
+    <br>
+    <p id="output"></p>
+    <div>
+        <input type="range" name="r" class="range"><br>
+        <input type="range" name="g" class="range"><br>
+        <input type="range" name="b" class="range">
+    </div>
+    <script>
+$(document).ready(function(){
+    // $("#output").html - ?
+    // $("#output").text($("#test").attr("id")); - ?
+    // $(".range").on("change", function(){ - ?
+    // $('body').css("background-color"
+    // $(this).attr("nam")
+    // змінити - change,  значення - value -> val
+    // $(this).val();
+   let color = { 'r': 100, 'g': 100, 'b': 100 };
+    $(".range").on("change", function(){
+        color[ $(this).attr("nam") ]= $(this).val();
+        $('body').css("background-color",
+        `rgb(${color['r']}, ${color['g']}, ${color['b']})`);
+    });
+
+
+    $("#btn1").click(function(){
+        $("#output").text($("#test").attr("id"));
+    });
+    $("#btn2").click(function(){
+        $("#output").html( // set КЛАДЕМО 
+            $("#test").html() //get БЕРМЕМО
+        );
+    });
+
+});
+    </script>
+</body>
+
+</html>
+
+
+

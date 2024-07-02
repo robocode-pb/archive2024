@@ -1,0 +1,21 @@
+#canvas {
+    position: absolute;
+   margin: auto;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+}
+#But {
+    position: absolute;
+    top: 650px;
+    left: 300px;
+}
+h1 {
+position: relative;
+left: 250px;
+}
+#score {
+    position: absolute;
+    le
+}

@@ -1,0 +1,9 @@
+$(".head1").click(function(){
+   $("#art1").slideToggle(700);
+})
+$(".head2").click(function(){
+    $("#art2").slideToggle(700);
+ })
+ $(".head3").click(function(){
+    $("#art3").slideToggle(700);
+ })

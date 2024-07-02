@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 50px;
+    font-family: sans-serif;
+    background: linear-gradient(to right, #F93D66, #6D47D9);
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .item {
+    background: rgba(0, 0, 0, 0.4);
+    position: relative;
+  }
+  
+  .item__overlay {
+    display: none;
+  }
+  .item__overlay button {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+  }
+  
+  .item:hover .item__overlay {
+    display: block;
+    background: #ffc60032;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    z-index: 2;
+  }
+  
+  .overlay.open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay-inner {
+    position: relative;
+    background: white;
+    width: 900px;
+    padding: 20px;
+  }
+  
+  .overlay img {
+    width: 100%;
+  }
+  
+  .close {
+    position: absolute;
+    border: 2px solid white;
+    color: white;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5px;
+  }
