@@ -1,0 +1,71 @@
+{
+	"name": "Лист подій 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Спрайт",
+					"sid": 440510618941538,
+					"behaviorType": "Платформер"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт",
+					"sid": 568582081260517,
+					"parameters": {
+						"animation": "\"Animation 1\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 630737202937534
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Спрайт",
+					"sid": 742509047606157,
+					"parameters": {
+						"object": "Sprite228"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Спрайт",
+					"sid": 188823467343566
+				}
+			],
+			"sid": 862129941951969
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite",
+					"sid": 114500429864733,
+					"parameters": {
+						"object": "Спрайт"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Sprite",
+					"sid": 199708805519181
+				}
+			],
+			"sid": 360701473626869
+		}
+	],
+	"sid": 381949206235476
+}

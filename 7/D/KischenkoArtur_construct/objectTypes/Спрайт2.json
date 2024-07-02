@@ -1,0 +1,64 @@
+{
+	"name": "Спрайт2",
+	"plugin-id": "Sprite",
+	"sid": 549492253842121,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "ТвердеТіло",
+			"sid": 508502155225956
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9143872,
+						"collisionPoly": {
+							"points": [
+								0.0625,
+								0,
+								0.9375,
+								0,
+								0.8124999659402034,
+								0.008928622518266961,
+								0.8214283159800942,
+								1,
+								0.9375,
+								1,
+								0.1785719564982823,
+								1,
+								0.16964290823255268,
+								0.9241072620664323,
+								0.16071413244519914,
+								0.06696428145681109
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 980112634073133,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
